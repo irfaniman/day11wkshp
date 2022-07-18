@@ -31,3 +31,25 @@ git checkout -b develop master
 git add * (add to develop branch)
 
 git push -u origin develop (push to remote git develop branch)
+
+git push checkout master
+
+git merge develop (merge changes done in develop branch into master branch)
+
+git push -u origin master
+
+
+
+
+
+
+
+
+
+
+
+
+
+git merge master (merge changed done in master branch into develop branch)
+
+git push -u origin develop
