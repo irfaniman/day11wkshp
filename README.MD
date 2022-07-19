@@ -24,32 +24,41 @@ git push -u origin master
 
 git pull
 
-git branch -delete <branch name>
+git branch -a
+
+git branch -delete
 
 git checkout -b develop master
 
 git add * (add to develop branch)
 
+git commit -m "add readme file" (add to develop branch)
+
 git push -u origin develop (push to remote git develop branch)
 
-git push checkout master
+git checkout master
 
 git merge develop (merge changes done in develop branch into master branch)
 
 git push -u origin master
 
+//make changes in master, and need to synchronise this change to develop branch // assume changes
+has already been checked into master branch - git checkout develop
 
-
-
-
-
-
-
-
-
-
-
-
-git merge master (merge changed done in master branch into develop branch)
+git merge master (merge changes done in master branch into develop branch)
 
 git push -u origin develop
+
+## deploy to heroku from master branch always
+
+git branch
+
+git checkout master
+
+heroku login
+
+heroku apps:create
+
+git remote -v
+
+git push -u heroku master
